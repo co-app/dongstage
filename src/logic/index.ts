@@ -10,7 +10,7 @@ export interface SerializedData {
   desc: string;
   git: string;
   domain: string;
-  state: string;
+  state: "running" | "stopped" | "failed";
   team: string;
   isAdmin: boolean;
 }
