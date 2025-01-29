@@ -1,0 +1,11 @@
+{
+  "home": {
+    "desc": "홈"
+  },
+  "about": {
+    "desc": "소개"
+  },
+  "contact": {
+    "desc": "연락처"
+  }
+}
