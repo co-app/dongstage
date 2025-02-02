@@ -21,7 +21,7 @@ export default function Home() {
             </TableRow>
           </thead>
           <tbody>
-            {data.map((item, idx) => (
+          {Object.entries(data)?.map(([idx, item]) => (
               <TableRow key={idx}>
                 <TableCell>{item.category}</TableCell>
                 <TableCell>{item.arn}</TableCell>
