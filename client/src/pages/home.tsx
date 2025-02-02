@@ -1,5 +1,5 @@
 import { useVendorData } from "../hooks/useVendorData";
-import "./home.css";
+import { PageContainer, Table, TableCell, TableContainer, TableHeader, TableRow } from "../styles/Home.styled";
 
 export default function Home() {
   const { data, loading, error } = useVendorData("", true);
@@ -8,30 +8,30 @@ export default function Home() {
   if (error) return <div>에러 발생: {error.message}</div>;
 
   return (
-    <div className="page-container">
+    <PageContainer>
       <h1>프로젝트 목록</h1>
-      <div className="table-container">
-        <table className="backstage-table">
+      <TableContainer>
+        <Table>
           <thead>
-            <tr>
-              <th>이름</th>
-              <th>설명</th>
-              <th>상태</th>
-              <th>생성일</th>
-            </tr>
+            <TableRow>
+              <TableHeader>이름</TableHeader>
+              <TableHeader>설명</TableHeader>
+              <TableHeader>상태</TableHeader>
+              <TableHeader>생성일</TableHeader>
+            </TableRow>
           </thead>
           <tbody>
-            {Object.entries(data)?.map(([idx, item]) => (
-              <tr key={idx}>
-                <td>{item.category}</td>
-                <td>{item.arn}</td>
-                <td>{item.title}</td>
-                <td>{item.state}</td>
-              </tr>
+            {data.map((item, idx) => (
+              <TableRow key={idx}>
+                <TableCell>{item.category}</TableCell>
+                <TableCell>{item.arn}</TableCell>
+                <TableCell>{item.title}</TableCell>
+                <TableCell>{item.state}</TableCell>
+              </TableRow>
             ))}
           </tbody>
-        </table>
-      </div>
-    </div>
+        </Table>
+      </TableContainer>
+    </PageContainer>
   );
 }
