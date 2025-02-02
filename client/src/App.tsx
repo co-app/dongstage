@@ -1,9 +1,9 @@
 import { BrowserRouter, NavLink, Navigate, Route, Routes } from "react-router-dom";
 import navData from "../data/nav.json";
-import About from "./pages/about";
-import Contact from "./pages/contact";
+import About from "./pages/About";
 import { LayoutContainer, MainContainer, NavContainer, NavList, NavListItem } from "./styles/App.styled";
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 
 function App() {
