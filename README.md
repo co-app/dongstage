@@ -26,6 +26,13 @@
 - HTTP 통신 기능 추가
 - 최근 로그 및 Monitoring 기능 추가 (시계열 데이터 - influxdb)
 
+## Swagger
+
+```sh
+## in local
+http://localhost:8080/swagger/index.html
+```
+
 ## Docker 실행 스크립트
 
 ```sh
