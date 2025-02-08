@@ -31,3 +31,24 @@ type ResourceParams struct {
 	Tags []TagParams `json:"tags"`			     // 태그	
 	LinkAttr []LinkAttrParams `json:"link_attr"` // 링크 속성
 }
+
+type IdxAttr struct {
+	Idx int `json:"idx"`
+	Kor string `json:"kor"`
+	Eng string `json:"eng"`
+}
+
+var TableHeaderIdx = map[string]IdxAttr{
+	"id": {Idx: 0, Kor: "ID", Eng: "ID"},
+	"name": {Idx: 1, Kor: "이름", Eng: "Name"},
+	"vendor": {Idx: 2, Kor: "공급업체", Eng: "Vendor"},
+	"system": {Idx: 3, Kor: "시스템 구성", Eng: "System"},
+	"engine": {Idx: 4, Kor: "엔진", Eng: "Engine"},
+	"revision": {Idx: 5, Kor: "버전", Eng: "Revision"},
+	"team": {Idx: 6, Kor: "팀", Eng: "Team"},
+	"environment": {Idx: 7, Kor: "환경", Eng: "Environment"},
+	"status": {Idx: 8, Kor: "상태", Eng: "Status"},
+	"description": {Idx: 9, Kor: "설명", Eng: "Description"},
+	"tags": {Idx: 10, Kor: "태그", Eng: "Tags"},
+	"link_attr": {Idx: 11, Kor: "링크", Eng: "Link"},
+}

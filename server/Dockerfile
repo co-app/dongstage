@@ -24,6 +24,7 @@ WORKDIR /app
 ## Fiber PreFork
 COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=build /usr/bin/dumb-init /usr/bin/dumb-init
+COPY --from=build /app/mock mock                                     
 COPY --from=build /app/main .
 
 EXPOSE 8080
