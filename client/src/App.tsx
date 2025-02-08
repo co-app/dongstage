@@ -1,10 +1,21 @@
-import { BrowserRouter, NavLink, Navigate, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  NavLink,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
 import navData from "../data/nav.json";
-import About from "./pages/About";
-import { LayoutContainer, MainContainer, NavContainer, NavList, NavListItem } from "./styles/App.styled";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import Home from "./pages/home";
+import {
+  LayoutContainer,
+  MainContainer,
+  NavContainer,
+  NavList,
+  NavListItem,
+} from "./styles/App.styled";
 
 function App() {
   return (
@@ -14,7 +25,9 @@ function App() {
           <NavList>
             {Object.entries(navData).map(([key, item], index) => (
               <li key={index}>
-                <NavListItem><NavLink to={key}>{item.desc}</NavLink></NavListItem>
+                <NavListItem>
+                  <NavLink to={key}>{item.desc}</NavLink>
+                </NavListItem>
               </li>
             ))}
           </NavList>

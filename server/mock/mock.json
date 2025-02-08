@@ -1,0 +1,350 @@
+[
+  {
+    "id": "1",
+    "name": "core-service",
+    "vendor": "aws",
+    "system": "kubernetes",
+    "engine": "nodejs",
+    "revision": "v1.0.0",
+    "team": "core",
+    "environment": "dev",
+    "status": {
+      "status": "running",
+      "status_color": "green"
+    },
+    "description": "event analysis service",
+    "tags": [
+      {
+        "Team": "core",
+        "Owner": "dobby",
+        "Env": "dev"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://google.com",
+        "link_emoji": "github",
+        "link_text": "github"
+      },
+      {
+        "index": 2,
+        "link": "https://naver.com",
+        "link_emoji": "datadog",
+        "link_text": "datadog"
+      },
+      {
+        "index": 3,
+        "link": "https://google.com",
+        "link_emoji": "aws",
+        "link_text": "aws"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "auth-service",
+    "vendor": "gcp",
+    "system": "kubernetes",
+    "engine": "golang",
+    "revision": "v2.1.0",
+    "team": "auth",
+    "environment": "prod",
+    "status": {
+      "status": "running",
+      "status_color": "green"
+    },
+    "description": "사용자 인증 서비스",
+    "tags": [
+      {
+        "Team": "auth",
+        "Owner": "harry",
+        "Env": "prod"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://github.com/auth-service",
+        "link_emoji": "github",
+        "link_text": "github"
+      },
+      {
+        "index": 2,
+        "link": "https://console.cloud.google.com",
+        "link_emoji": "gcp",
+        "link_text": "gcp-console"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "payment-api",
+    "vendor": "aws",
+    "system": "ecs",
+    "engine": "java",
+    "revision": "v3.0.1",
+    "team": "billing",
+    "environment": "staging",
+    "status": {
+      "status": "warning",
+      "status_color": "yellow"
+    },
+    "description": "결제 처리 API",
+    "tags": [
+      {
+        "Team": "billing",
+        "Owner": "ron",
+        "Env": "staging"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://aws.amazon.com/console",
+        "link_emoji": "aws",
+        "link_text": "aws-console"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "notification-worker",
+    "vendor": "azure",
+    "system": "vm",
+    "engine": "python",
+    "revision": "v1.2.3",
+    "team": "platform",
+    "environment": "dev",
+    "status": {
+      "status": "stopped",
+      "status_color": "red"
+    },
+    "description": "푸시 알림 워커",
+    "tags": [
+      {
+        "Team": "platform",
+        "Owner": "hermione",
+        "Env": "dev"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://portal.azure.com",
+        "link_emoji": "azure",
+        "link_text": "azure-portal"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "recommendation-engine",
+    "vendor": "aws",
+    "system": "lambda",
+    "engine": "python",
+    "revision": "v2.0.0",
+    "team": "ml",
+    "environment": "prod",
+    "status": {
+      "status": "running",
+      "status_color": "green"
+    },
+    "description": "상품 추천 엔진",
+    "tags": [
+      {
+        "Team": "ml",
+        "Owner": "luna",
+        "Env": "prod"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://grafana.com",
+        "link_emoji": "grafana",
+        "link_text": "monitoring"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "inventory-service",
+    "vendor": "gcp",
+    "system": "cloud-run",
+    "engine": "nodejs",
+    "revision": "v1.5.0",
+    "team": "commerce",
+    "environment": "prod",
+    "status": {
+      "status": "running",
+      "status_color": "green"
+    },
+    "description": "재고 관리 서비스",
+    "tags": [
+      {
+        "Team": "commerce",
+        "Owner": "ginny",
+        "Env": "prod"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://prometheus.io",
+        "link_emoji": "prometheus",
+        "link_text": "metrics"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "search-api",
+    "vendor": "aws",
+    "system": "eks",
+    "engine": "java",
+    "revision": "v4.0.0",
+    "team": "search",
+    "environment": "staging",
+    "status": {
+      "status": "degraded",
+      "status_color": "orange"
+    },
+    "description": "검색 엔진 API",
+    "tags": [
+      {
+        "Team": "search",
+        "Owner": "neville",
+        "Env": "staging"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://elastic.co",
+        "link_emoji": "elastic",
+        "link_text": "elasticsearch"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "logging-collector",
+    "vendor": "azure",
+    "system": "aks",
+    "engine": "golang",
+    "revision": "v1.0.1",
+    "team": "platform",
+    "environment": "prod",
+    "status": {
+      "status": "running",
+      "status_color": "green"
+    },
+    "description": "로그 수집기",
+    "tags": [
+      {
+        "Team": "platform",
+        "Owner": "cho",
+        "Env": "prod"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://grafana.com/loki",
+        "link_emoji": "loki",
+        "link_text": "logs"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "user-activity",
+    "vendor": "gcp",
+    "system": "gke",
+    "engine": "rust",
+    "revision": "v0.1.0",
+    "team": "data",
+    "environment": "dev",
+    "status": {
+      "status": "running",
+      "status_color": "green"
+    },
+    "description": "사용자 활동 추적",
+    "tags": [
+      {
+        "Team": "data",
+        "Owner": "draco",
+        "Env": "dev"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://bigquery.cloud.google.com",
+        "link_emoji": "bigquery",
+        "link_text": "analytics"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "chat-bot",
+    "vendor": "aws",
+    "system": "fargate",
+    "engine": "python",
+    "revision": "v2.3.0",
+    "team": "ai",
+    "environment": "prod",
+    "status": {
+      "status": "running",
+      "status_color": "green"
+    },
+    "description": "고객 서비스 챗봇",
+    "tags": [
+      {
+        "Team": "ai",
+        "Owner": "fred",
+        "Env": "prod"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://sagemaker.aws",
+        "link_emoji": "sagemaker",
+        "link_text": "model-training"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "cdn-controller",
+    "vendor": "cloudflare",
+    "system": "workers",
+    "engine": "javascript",
+    "revision": "v1.1.0",
+    "team": "infra",
+    "environment": "prod",
+    "status": {
+      "status": "running",
+      "status_color": "green"
+    },
+    "description": "CDN 캐시 제어",
+    "tags": [
+      {
+        "Team": "infra",
+        "Owner": "george",
+        "Env": "prod"
+      }
+    ],
+    "link_attr": [
+      {
+        "index": 1,
+        "link": "https://cloudflare.com",
+        "link_emoji": "cloudflare",
+        "link_text": "cdn-dashboard"
+      }
+    ]
+  }
+]
