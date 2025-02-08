@@ -26,7 +26,6 @@ func main() {
 	r.Get("/ping", handlers.Ping)
 	r.Get("/resource",handlers.GetResource)
 
-	// swagger는 나중에 추가하실 때 관련 패키지를 설치 후 주석 해제하세요
 	app.Get("/swagger/*", swagger.HandlerDefault)
 
 	log.Fatal(app.Listen(fmt.Sprintf(":%s", PORT)))
